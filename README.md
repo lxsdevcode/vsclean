@@ -29,7 +29,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/lxsdevcode/vsclean.git
-cd vscode-server-cleanup
+cd vsclean
 ```
 
 Make the script executable:
@@ -77,10 +77,10 @@ crontab -e
 Add:
 
 ```cron
-30 4 * * * /bin/bash /path/to/vscode-server-cleanup/vsclean.sh >> "$HOME/vsclean.log" 2>&1
+30 4 * * * /bin/bash /path/to/vsclean/vsclean.sh >> "$HOME/vsclean.log" 2>&1
 ```
 
-Replace `/path/to/vscode-server-cleanup/` with the actual installation path.
+Replace `/path/to/vsclean/` with the actual installation path.
 
 **Important:** Scheduled execution runs in deletion mode. Test the script with `--dry-run` first and verify that the proposed deletions are correct.
 
